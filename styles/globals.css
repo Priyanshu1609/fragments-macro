@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "BritanicaBlack";
+    src:  url("/fonts/Britanica-Black.woff2") format("woff2");
+    font-display : swap;
+  }
+}
+
+
+/* 
+@font-face {
+  font-family: "BritanicaBlackExpaneded";
+  font-weight: 400;
+  src:  url("/public/Britanica-BlackExpanded.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "BritanicaBlackExpaneded" !important;
+  color: white;
+}
+h2 {
+  font-family: "BritanicaBlack" !important;
+  color: white;
+} */
+
+*{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-scrollbar {
+  background-color: #2C2C35!important;
+  margin-top: 24px;
+}
+
+
+.swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: #2bffb1!important;
+ 
+}
+.swiper-slide{
+    padding-bottom: 16px;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 15rem;
+}
+.swiper-slide:nth-child(2n+1) {
+  width:15rem; 
+}
+
+/* .swiper-wrapper {
+  margin-right: auto;
+}
+.swiper {
+    margin-left: 20px!important;
+} */
